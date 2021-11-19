@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'pages/home_page.dart';
 import 'pages/login_page.dart';
 import 'utils/routes.dart';
+import 'utils/color.dart';
 
 void main() {
   runApp(const FlutterMaster());
@@ -15,17 +16,16 @@ class FlutterMaster extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      // home: const HomePage(),
       themeMode: ThemeMode.light,
       theme: ThemeData(
-          primarySwatch: Colors.purple,
-          // primaryTextTheme: GoogleFonts.latoTextTheme(),
+          primarySwatch: CreateColor.createMaterialColor(
+            const Color(0xFF6B62FF),
+          ),
           fontFamily: GoogleFonts.lato().fontFamily),
       darkTheme: ThemeData(
         primarySwatch: Colors.deepPurple,
         brightness: Brightness.dark,
       ),
-      // initialRoute: "/home",
       routes: {
         "/": (BuildContext context) => const LoginPage(),
         MyRoutes.homeRoute: (BuildContext context) => const HomePage(),
