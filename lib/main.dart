@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_master/home_page.dart';
 
 void main() {
-  runApp(FlutterMaster());
+  runApp(const FlutterMaster());
 }
 
 class FlutterMaster extends StatelessWidget {
@@ -9,14 +10,6 @@ class FlutterMaster extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: const Text("Welcome to 30 days of Flutter"),
-          ),
-        ),
-      ),
-    );
+    return const MaterialApp(home: HomePage());
   }
 }
