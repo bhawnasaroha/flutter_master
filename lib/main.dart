@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_master/home_page.dart';
+import 'pages/home_page.dart';
+import 'pages/login_page.dart';
 
 void main() {
   runApp(const FlutterMaster());
@@ -10,6 +11,22 @@ class FlutterMaster extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: HomePage());
+    return MaterialApp(
+      // home: const HomePage(),
+      themeMode: ThemeMode.light,
+      theme: ThemeData(
+        primarySwatch: Colors.teal,
+      ),
+      darkTheme: ThemeData(
+        primarySwatch: Colors.deepPurple,
+        brightness: Brightness.dark,
+      ),
+      initialRoute: "/home",
+      routes: {
+        "/": (BuildContext context) => const LoginPage(),
+        "/home": (BuildContext context) => const HomePage(),
+        "/login": (BuildContext context) => const LoginPage(),
+      },
+    );
   }
 }
