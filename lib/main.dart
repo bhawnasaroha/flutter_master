@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'pages/home_page.dart';
 import 'pages/login_page.dart';
+import 'utils/routes.dart';
 
 void main() {
   runApp(const FlutterMaster());
@@ -27,8 +28,8 @@ class FlutterMaster extends StatelessWidget {
       // initialRoute: "/home",
       routes: {
         "/": (BuildContext context) => const LoginPage(),
-        "/home": (BuildContext context) => const HomePage(),
-        "/login": (BuildContext context) => const LoginPage(),
+        MyRoutes.homeRoute: (BuildContext context) => const HomePage(),
+        MyRoutes.loginRoute: (BuildContext context) => const LoginPage(),
       },
     );
   }
