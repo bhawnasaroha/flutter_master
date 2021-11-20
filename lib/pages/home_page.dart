@@ -8,7 +8,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Flutter Master"),
+        title: const Text(
+          "Flutter Master",
+          style: TextStyle(
+            fontSize: 22,
+          ),
+        ),
       ),
       body: Center(
         child: Container(

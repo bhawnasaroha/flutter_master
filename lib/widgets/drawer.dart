@@ -16,6 +16,9 @@ class FMDrawer extends StatelessWidget {
             DrawerHeader(
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
+                decoration: BoxDecoration(
+                  color: const Color(0xFF6B62FF),
+                ),
                 margin: EdgeInsets.zero,
                 accountName: Text("Mani Saroha"),
                 accountEmail: Text("30bhawna95@gmail.com"),

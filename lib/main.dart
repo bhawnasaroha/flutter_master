@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'utils/routes.dart';
 import 'pages/home_page.dart';
 import 'pages/login_page.dart';
-import 'utils/routes.dart';
-import 'utils/color.dart';
+import 'widgets/themes.dart';
 
 void main() {
   runApp(const FlutterMaster());
@@ -17,17 +16,8 @@ class FlutterMaster extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
-      theme: ThemeData(
-          primarySwatch: CreateColor.createMaterialColor(
-            const Color(0xFF6B62FF),
-          ),
-          fontFamily: GoogleFonts.lato().fontFamily),
-      darkTheme: ThemeData(
-        primarySwatch: CreateColor.createMaterialColor(
-          const Color(0xFF6B62FF),
-        ),
-        brightness: Brightness.dark,
-      ),
+      theme: MyTheme.lightTheme,
+      darkTheme: MyTheme.darkTheme,
       initialRoute: MyRoutes.homeRoute,
       routes: {
         "/": (BuildContext context) => const LoginPage(),
