@@ -28,6 +28,7 @@ class FlutterMaster extends StatelessWidget {
         ),
         brightness: Brightness.dark,
       ),
+      initialRoute: MyRoutes.homeRoute,
       routes: {
         "/": (BuildContext context) => const LoginPage(),
         MyRoutes.homeRoute: (BuildContext context) => const HomePage(),
