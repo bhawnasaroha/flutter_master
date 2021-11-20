@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_master/utils/color.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../constants.dart';
+
 class MyTheme {
   static ThemeData get lightTheme => ThemeData(
         primarySwatch: CreateColor.createMaterialColor(
-          const Color(0xFF6B62FF),
+          primaryColor,
         ),
         primaryColor: Colors.black,
         fontFamily: GoogleFonts.lato().fontFamily,

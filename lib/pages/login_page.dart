@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../constants.dart';
 import '../utils/routes.dart';
 
 class LoginPage extends StatefulWidget {
@@ -115,7 +116,7 @@ class _LoginPageState extends State<LoginPage> {
                       height: 40,
                     ),
                     Material(
-                      color: const Color(0xFF6B62FF),
+                      color: primaryColor,
                       borderRadius:
                           BorderRadius.circular(changeButton ? 50 : 5),
                       child: InkWell(

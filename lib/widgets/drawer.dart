@@ -1,23 +1,26 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../constants.dart';
+
 class FMDrawer extends StatelessWidget {
   const FMDrawer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final imageUrl = "https://avatars.githubusercontent.com/u/35265892?v=4";
+    const String imageUrl =
+        "https://avatars.githubusercontent.com/u/35265892?v=4";
     return Drawer(
       child: Container(
-        color: const Color(0xFF6B62FF),
+        color: primaryColor,
         child: ListView(
           padding: EdgeInsets.zero,
-          children: <Widget>[
+          children: const <Widget>[
             DrawerHeader(
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
                 decoration: BoxDecoration(
-                  color: const Color(0xFF6B62FF),
+                  color: primaryColor,
                 ),
                 margin: EdgeInsets.zero,
                 accountName: Text("Mani Saroha"),
@@ -35,7 +38,7 @@ class FMDrawer extends StatelessWidget {
               title: Text(
                 "Home",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 18,
                   color: Colors.white,
                 ),
               ),
@@ -48,7 +51,7 @@ class FMDrawer extends StatelessWidget {
               title: Text(
                 "Profile",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 18,
                   color: Colors.white,
                 ),
               ),
@@ -61,7 +64,7 @@ class FMDrawer extends StatelessWidget {
               title: Text(
                 "Email Me",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 18,
                   color: Colors.white,
                 ),
               ),
