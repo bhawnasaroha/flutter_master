@@ -23,7 +23,9 @@ class FlutterMaster extends StatelessWidget {
           ),
           fontFamily: GoogleFonts.lato().fontFamily),
       darkTheme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        primarySwatch: CreateColor.createMaterialColor(
+          const Color(0xFF6B62FF),
+        ),
         brightness: Brightness.dark,
       ),
       routes: {
