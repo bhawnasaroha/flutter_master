@@ -10,7 +10,7 @@ class MyTheme {
           primaryColor,
         ),
         primaryColor: Colors.black,
-        fontFamily: GoogleFonts.lato().fontFamily,
+        fontFamily: GoogleFonts.righteous().fontFamily,
         appBarTheme: AppBarTheme(
           color: Colors.white,
           elevation: 0,
@@ -26,4 +26,9 @@ class MyTheme {
   static ThemeData get darkTheme => ThemeData(
         brightness: Brightness.dark,
       );
+
+  // Colors
+  static Color primaryColor = Color(0xFF6B62FF);
+  static Color creamColor = Color(0xFFf5f5f5);
+  static Color darkBluish = Color(0xFF403b58);
 }
