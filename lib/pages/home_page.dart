@@ -4,10 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-import '../constants.dart';
 import '../models/catalog.dart';
-import '../widgets/drawer.dart';
-import '../widgets/item_widget.dart';
 import '../widgets/themes.dart';
 
 class HomePage extends StatefulWidget {
@@ -120,7 +117,9 @@ class CatalogItem extends StatelessWidget {
                         style: ButtonStyle(
                           backgroundColor:
                               MaterialStateProperty.all(MyTheme.darkBluish),
-                          shape: MaterialStateProperty.all(StadiumBorder()),
+                          shape: MaterialStateProperty.all(
+                            const StadiumBorder(),
+                          ),
                         ))
                   ],
                 ).pOnly(right: 8)
