@@ -11,13 +11,8 @@ class HomeDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          // title: Text(
-          //   catalog.name,
-          //   style: TextStyle(
-          //     fontSize: 18,
-          //   ),
-          // ),
-          ),
+        backgroundColor: Colors.transparent,
+      ),
       bottomNavigationBar: Container(
         color: Colors.white,
         child: ButtonBar(
@@ -32,14 +27,14 @@ class HomeDetailPage extends StatelessWidget {
                 .make(),
             ElevatedButton(
               onPressed: () {},
-              child: "Buy".text.xl.make(),
+              child: "Add to cart".text.xl.make(),
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(MyTheme.darkBluish),
                 shape: MaterialStateProperty.all(
                   const StadiumBorder(),
                 ),
               ),
-            ).wh(100, 40),
+            ).wh(130, 40),
           ],
         ).p32(),
       ),
@@ -68,7 +63,13 @@ class HomeDetailPage extends StatelessWidget {
                       catalog.desc.text.xl
                           .textStyle(context.captionStyle!)
                           .make(),
-                      20.heightBox,
+                      "For childe befell for whom goodly was deigned known, yes yet if labyrinth she aye glorious have. To if waste for be though times pomp might thence, taste sullen the the was that fountain dwell, saw uncouth present rhyme been her a go. Will the yea his wandered, he thy."
+                          .text
+                          .size(14)
+                          .align(TextAlign.center)
+                          .textStyle(context.captionStyle!)
+                          .make()
+                          .p16()
                     ],
                   ).py64(),
                 ),

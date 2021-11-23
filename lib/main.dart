@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'pages/cart_page.dart';
 import 'utils/routes.dart';
 import 'pages/home_page.dart';
 import 'pages/login_page.dart';
@@ -23,6 +25,7 @@ class FlutterMaster extends StatelessWidget {
         "/": (BuildContext context) => const LoginPage(),
         MyRoutes.homeRoute: (BuildContext context) => const HomePage(),
         MyRoutes.loginRoute: (BuildContext context) => const LoginPage(),
+        MyRoutes.cartRoute: (BuildContext context) => const CartPage(),
       },
     );
   }
